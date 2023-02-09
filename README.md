@@ -63,3 +63,8 @@ Start the app:
 ```
 docker run --rm -it -p 3000/3000/tcp nomedockerhub:latest
 ```
+
+
+To connect the app to an external database, you have to configure all parameters into:
+- docker-compose.yml
+- database.yml
