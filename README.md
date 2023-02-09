@@ -6,7 +6,7 @@ This is the repository for RoadSteamer Cop-Suite, based on [Decidim](https://git
 
 1. Install **Docker** and **Docker-compose**
  
-2. Clone this repository or [download and unpack it](https://github.com/Road-STEAMer/CoP-Suite.git) in some place.
+2. Clone this repository or [download and unpack it](https://github.com/Road-STEAMer/CoP-Suite/archive/refs/heads/main.zip) in some place.
 
 ```
 git clone https://github.com/Road-STEAMer/CoP-Suite.git
