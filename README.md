@@ -21,6 +21,16 @@ docker-compose up
 ```
 Point your browser to: http://localhost:3000
 
+### Configuration external database for production environment
+The database must be PostgreSQL 14.5.
+To connect the app to an external database,in production, you have to configure all parameters into:
+- docker-compose.yml
+
+Into docker-compose.yml, into section "ENVIRONMENT" you have to set this parameter,
+      DATABASE_URL="postgres://myuser:mypass@host:port/namedatabase"
+      
+      
+      
 ### Deploy
 Create your image:
 ```
@@ -65,6 +75,4 @@ docker run --rm -it -p 3000/3000/tcp nomedockerhub:latest
 ```
 
 
-To connect the app to an external database, you have to configure all parameters into:
-- docker-compose.yml
-- database.yml
+
