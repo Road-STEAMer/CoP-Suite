@@ -1,13 +1,15 @@
 version: '3.1'
 services:
   app:
-    image: "ritagaeta/decidim-roadsteamer:latest"
+     # image: "ritagaeta/decidim-roadsteamer:latest"
+    image: "ritagaeta/decidim-roadsteamer:v1.1"
     volumes:
       - .:/code
     environment:
       - PORT=3000
-      - DATABASE_HOST=192.168.1.77
-      - DATABASE_PORT=5432
+      - DATABASE_HOST= pg
+     # - DATABASE_HOST=192.168.1.76
+      #- DATABASE_PORT=5432
       - DATABASE_USERNAME=postgres
       - DATABASE_PASSWORD=ADMIN
       - RAILS_ENV=development

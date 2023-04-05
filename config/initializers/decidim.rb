@@ -8,6 +8,37 @@ Decidim.configure do |config|
   config.default_locale = :en
   config.available_locales = [:en]
 
+
+  #Cookie
+  config.consent_categories = [
+    {
+      slug: "essential",
+      mandatory: true,
+      items: [
+        {
+          type: "cookie",
+          name: "_session_id"
+        },
+        {
+          type: "cookie",
+          name: Decidim.consent_cookie_name
+        }
+      ]
+    },
+    {
+      slug: "preferences",
+      mandatory: false
+    },
+    {
+      slug: "analytics",
+      mandatory: false
+    },
+    {
+      slug: "marketing",
+      mandatory: false
+    }
+  ]
+
   # Geocoder configuration
   # config.geocoder = {
   #   static_map_url: "https://image.maps.cit.api.here.com/mia/1.6/mapview",

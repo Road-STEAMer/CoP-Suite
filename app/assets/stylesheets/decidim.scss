@@ -45,7 +45,6 @@
 //   --facebook: #{$facebook};
 //   --google: #{$google};
 // }
-@import '../fonts/LiberGrotesqueFamily-SemiBold.ttf';
 $primary_color: #d04d9c;
 .title-bar{
     background: white;
@@ -56,4 +55,4 @@ $primary_color: #d04d9c;
     font-weight: bold;  
     font-style: normal;  
  }
-@import "decidim/application";
+

@@ -22,14 +22,16 @@ default: &default
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  host: <%= ENV.fetch("DATABASE_HOST") { "192.168.1.77" } %>
+  host: <%= ENV.fetch("DATABASE_HOST") { "localhost" } %>
+ # host: <%= ENV.fetch("DATABASE_HOST") { "192.168.1.76" } %>
   port: <%= ENV.fetch("DATABASE_PORT") { "5432" } %>
   username: <%= ENV.fetch("DATABASE_USERNAME") { "" } %>
   password: <%= ENV.fetch("DATABASE_PASSWORD") { "" } %>
 
 development:
   <<: *default
-  database: decidim-hacks_development
+  database: roadSteamer_dev
+ # database: decidim-hacks_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -63,7 +65,8 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: decidim-hacks_test
+  database: roadSteamer_test
+  #database: decidim-hacks_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
